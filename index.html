@@ -146,7 +146,7 @@
     }
 
     /* ============================================================
-       ГЛАВНАЯ СТРАНИЦА: ПРОФИЛЬ ИГРОКА
+       ПРОФИЛЬ ИГРОКА (ГЛАВНАЯ СТРАНИЦА)
        ============================================================ */
     .profile-hero-card {
       background: var(--card-bg);
@@ -263,7 +263,6 @@
       color: #ffffff;
     }
 
-    /* CARD DISPLAY ON PROFILE */
     .profile-card-section-title {
       display: flex;
       justify-content: space-between;
@@ -326,7 +325,7 @@
     }
 
     /* ============================================================
-       CARD: NOIR WORLD ELITE EXACT REPLICA
+       CARD: NOIR WORLD ELITE REPLICA
        ============================================================ */
     .card-scene {
       perspective: 1000px;
@@ -430,7 +429,6 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
 
-    /* НОМЕР КАРТЫ */
     .card-digits-row {
       position: relative;
       z-index: 3;
@@ -590,7 +588,7 @@
       text-transform: lowercase;
     }
 
-    /* MONOCHROME VALUATION PANEL */
+    /* VALUATION PANEL */
     .valuation-panel {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -1242,7 +1240,7 @@
       font-family: var(--font-mono);
     }
 
-    /* MONOCHROME TOAST */
+    /* TOAST */
     #toast {
       position: fixed;
       top: 20px;
@@ -1292,9 +1290,8 @@
       </div>
     </header>
 
-    <!-- MAIN VIEW = ПРОФИЛЬ ИГРОКА (ГЛАВНАЯ СТРАНИЦА) -->
+    <!-- MAIN VIEW = ПРОФИЛЬ ИГРОКА -->
     <main id="mainProfileScreen">
-      <!-- 1. HERO КАРТОЧКА ПРОФИЛЯ -->
       <div class="profile-hero-card">
         <div class="avatar-box" id="profileAvatar" onclick="handleSecretDevTap()">👑</div>
         <div class="profile-meta-info">
@@ -1304,7 +1301,6 @@
         </div>
       </div>
 
-      <!-- 2. СУММАРНОЕ СОСТОЯНИЕ (NET WORTH) -->
       <div class="networth-panel">
         <div class="nw-label">Суммарный Капитал игрока</div>
         <div class="nw-value" id="netWorthDisplay">$0</div>
@@ -1329,7 +1325,6 @@
         </div>
       </div>
 
-      <!-- 3. ДЕМОНСТРАЦИЯ АКТИВНОЙ КАРТЫ В ПРОФИЛЕ -->
       <div class="profile-card-section-title">
         <span class="section-label">Главная Карта Профиля</span>
         <span style="font-size:0.75rem; color:var(--text-muted); cursor:pointer;" onclick="openView('inventory')">Все карты →</span>
@@ -1364,18 +1359,18 @@
               <div class="card-holder-name" id="profileCardholder">VIP CARDHOLDER</div>
             </div>
 
+            <!-- ПАРОДИЯ MasterCash -->
             <div class="mc-monochrome-box">
               <div class="mc-circles-wrapper">
                 <div class="mc-circle-mono mc-c-left"></div>
                 <div class="mc-circle-mono mc-c-right"></div>
               </div>
-              <div class="mc-text-mono">mastercard</div>
+              <div class="mc-text-mono">mastercash</div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 4. БЫСТРЫЙ ПЕРЕХОД ПО РАЗДЕЛАМ (СЕТКА) -->
       <div class="profile-card-section-title" style="margin-top:6px;">
         <span class="section-label">Быстрые разделы</span>
       </div>
@@ -1451,12 +1446,10 @@
       </div>
 
       <div class="drawer-nav-list">
-        <!-- ГЛАВНАЯ СТРАНИЦА - ПРОФИЛЬ -->
         <button class="menu-item" onclick="closeAllViews()">
           <span class="menu-icon">👑</span>
           <span>Профиль игрока (Главная)</span>
         </button>
-        <!-- ВЫПУСК КАРТ ТЕПЕРЬ ТАКЖЕ В МЕНЮ -->
         <button class="menu-item" onclick="openView('emission')">
           <span class="menu-icon">🎴</span>
           <span>Выпуск карт (Эмиссия)</span>
@@ -1484,12 +1477,12 @@
       </div>
 
       <div style="font-size: 0.7rem; color:var(--text-dim); text-align:center;">
-        CartHolder Games • Crypto & Garage
+        CartHolder Games • Parody Edition
       </div>
     </div>
   </div>
 
-  <!-- VIEW: ЭМИССИЯ КАРТ (РУЛЕТКА / ВЫПУСК) -->
+  <!-- VIEW: ЭМИССИЯ КАРТ -->
   <div class="view-modal" id="view-emission">
     <div class="view-nav">
       <button class="back-btn" onclick="closeAllViews()">← В профиль</button>
@@ -1516,31 +1509,26 @@
           <div class="dark-chip"></div>
         </div>
 
-        <!-- РУЛЕТКА -->
         <div class="card-digits-row">
           <div class="slot-roulette-container" id="rouletteContainer">
-            <!-- Группа 1 -->
             <div class="slot-group">
               <div class="reel-col" id="reel-0"><div class="reel-strip" id="strip-0"></div></div>
               <div class="reel-col" id="reel-1"><div class="reel-strip" id="strip-1"></div></div>
               <div class="reel-col" id="reel-2"><div class="reel-strip" id="strip-2"></div></div>
               <div class="reel-col" id="reel-3"><div class="reel-strip" id="strip-3"></div></div>
             </div>
-            <!-- Группа 2 -->
             <div class="slot-group">
               <div class="reel-col" id="reel-4"><div class="reel-strip" id="strip-4"></div></div>
               <div class="reel-col" id="reel-5"><div class="reel-strip" id="strip-5"></div></div>
               <div class="reel-col" id="reel-6"><div class="reel-strip" id="strip-6"></div></div>
               <div class="reel-col" id="reel-7"><div class="reel-strip" id="strip-7"></div></div>
             </div>
-            <!-- Группа 3 -->
             <div class="slot-group">
               <div class="reel-col" id="reel-8"><div class="reel-strip" id="strip-8"></div></div>
               <div class="reel-col" id="reel-9"><div class="reel-strip" id="strip-9"></div></div>
               <div class="reel-col" id="reel-10"><div class="reel-strip" id="strip-10"></div></div>
               <div class="reel-col" id="reel-11"><div class="reel-strip" id="strip-11"></div></div>
             </div>
-            <!-- Группа 4 -->
             <div class="slot-group">
               <div class="reel-col" id="reel-12"><div class="reel-strip" id="strip-12"></div></div>
               <div class="reel-col" id="reel-13"><div class="reel-strip" id="strip-13"></div></div>
@@ -1564,13 +1552,12 @@
               <div class="mc-circle-mono mc-c-left"></div>
               <div class="mc-circle-mono mc-c-right"></div>
             </div>
-            <div class="mc-text-mono">mastercard</div>
+            <div class="mc-text-mono">mastercash</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ОЦЕНКА -->
     <div class="valuation-panel" style="margin-top:14px;">
       <div class="val-header">
         <span class="val-title">Оценка Базиса (Рыночная стоимость)</span>
@@ -1582,7 +1569,6 @@
       </div>
     </div>
 
-    <!-- КНОПКИ -->
     <div class="controls-zone" style="margin-top:14px;">
       <button class="btn btn-emit" id="btnRoll" onclick="triggerCardGeneration()">
         <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -1602,7 +1588,7 @@
     </div>
   </div>
 
-  <!-- VIEW 1: ИНВЕНТАРЬ (ПОРТФЕЛЬ) -->
+  <!-- VIEW: ИНВЕНТАРЬ -->
   <div class="view-modal" id="view-inventory">
     <div class="view-nav">
       <button class="back-btn" onclick="closeAllViews()">← В профиль</button>
@@ -1612,7 +1598,7 @@
     <div class="items-stack" id="inventoryContainer"></div>
   </div>
 
-  <!-- VIEW 2: КРИПТОРЫНОК -->
+  <!-- VIEW: КРИПТОРЫНОК -->
   <div class="view-modal" id="view-crypto">
     <div class="view-nav">
       <button class="back-btn" id="cryptoBackBtn" onclick="handleCryptoBack()">← В профиль</button>
@@ -1635,7 +1621,7 @@
         <div style="display:flex; align-items:center; gap:12px;">
           <div class="crypto-icon" id="detailCoinIcon">₿</div>
           <div>
-            <div style="font-weight:800; font-size:1.15rem; color:#fff;" id="detailCoinName">Bitcoin</div>
+            <div style="font-weight:800; font-size:1.15rem; color:#fff;" id="detailCoinName">BitCoin</div>
             <div style="font-size:0.75rem; color:var(--text-muted);" id="detailCoinSym">BTC / USD</div>
           </div>
         </div>
@@ -1693,7 +1679,7 @@
     </div>
   </div>
 
-  <!-- VIEW 3: АВТОСАЛОН -->
+  <!-- VIEW: АВТОСАЛОН -->
   <div class="view-modal" id="view-dealership">
     <div class="view-nav">
       <button class="back-btn" onclick="closeAllViews()">← В профиль</button>
@@ -1703,7 +1689,7 @@
     <div class="items-stack" id="dealershipContainer"></div>
   </div>
 
-  <!-- VIEW 4: МОЙ ГАРАЖ -->
+  <!-- VIEW: ГАРАЖ -->
   <div class="view-modal" id="view-garage">
     <div class="view-nav">
       <button class="back-btn" onclick="closeAllViews()">← В профиль</button>
@@ -1713,7 +1699,7 @@
     <div class="items-stack" id="garageContainer"></div>
   </div>
 
-  <!-- VIEW 5: ФИНАНСОВЫЕ АКТИВЫ -->
+  <!-- VIEW: АКТИВЫ -->
   <div class="view-modal" id="view-business">
     <div class="view-nav">
       <button class="back-btn" onclick="closeAllViews()">← В профиль</button>
@@ -1723,19 +1709,17 @@
     <div class="items-stack" id="businessContainer"></div>
   </div>
 
-  <!-- TOAST -->
   <div id="toast">
     <span id="toastMsg">Уведомление</span>
   </div>
 
-  <!-- SCRIPT -->
   <script>
     const MAX_CARDS = 5;
     const EMIT_PRICE = 5;
     const ROW_HEIGHT = 32;
 
-    const ADMIN_TELEGRAM_USERNAMES = ['@hudomsg'];
-    const DEV_SECRET_PASS = '1488';
+    const ADMIN_TELEGRAM_USERNAMES = ['@world_elite'];
+    const DEV_SECRET_PASS = '777';
     let devUnlocked = false;
     let devTapCount = 0;
     let devTapTimer = null;
@@ -1812,7 +1796,6 @@
           <circle cx="65" cy="72" r="7" fill="#20242e" stroke="#8a8d98" stroke-width="1.5"/>
           <circle cx="195" cy="72" r="15" fill="#0a0c10" stroke="#ffffff" stroke-width="2.5"/>
           <circle cx="195" cy="72" r="7" fill="#20242e" stroke="#8a8d98" stroke-width="1.5"/>
-          <polygon points="236,56 244,57 240,62 234,60" fill="#ffffff"/>
         </svg>
       `,
       suv: `
@@ -1859,40 +1842,41 @@
       `
     };
 
+    // ПАРОДИЙНЫЕ НАЗВАНИЯ МАШИН (БЕЗ РИСКА ИСКОВ)
     const CARS_CATALOG = [
-      { id: 'bmw_m5', name: 'BMW M5 CS', type: 'sedan', price: 1500, income: 5, tag: 'Sport Sedan', desc: '4.4L V8 Twin-Turbo • 635 л.с. • Карбоновый капот' },
-      { id: 'audi_rs7', name: 'Audi RS7 Performance', type: 'sedan', price: 2400, income: 9, tag: 'Sportback', desc: '4.0L V8 Quattro • Керамические тормоза • 630 л.с.' },
-      { id: 'cadillac_ct5', name: 'Cadillac CT5-V Blackwing', type: 'sedan', price: 3200, income: 12, tag: 'V8 Supercharged', desc: '6.2L Компрессор • 668 л.с. • Механика' },
-      { id: 'g63_brabus', name: 'Mercedes-AMG G 63 Brabus', type: 'suv', price: 4500, income: 18, tag: 'Luxury SUV', desc: 'Widestar 800 • Вся в карбоне • Выхлоп с подсветкой' },
-      { id: 'urus_mansory', name: 'Lamborghini Urus Venatus', type: 'suv', price: 7500, income: 32, tag: 'Super SUV', desc: 'Mansory Widebody • 820 л.с. • Скорость 325 км/ч' },
-      { id: 'porsche_gt3rs', name: 'Porsche 911 GT3 RS (992)', type: 'track', price: 12000, income: 55, tag: 'Track Weapon', desc: 'Атмосферный 4.0L • 9000 об/мин • Активная DRS аэро' },
-      { id: 'mclaren_765lt', name: 'McLaren 765LT Spider', type: 'track', price: 18000, income: 85, tag: 'Longtail', desc: 'Карбоновый монокок • 765 л.с. • 4 выхлопа из титана' },
-      { id: 'lambo_revuelto', name: 'Lamborghini Revuelto', type: 'supercar', price: 28000, income: 140, tag: 'V12 Hybrid', desc: '1015 л.с. • Разгон 0-100 за 2.5 сек • 3 электромотора' },
-      { id: 'ferrari_sf90', name: 'Ferrari SF90 XX Stradale', type: 'supercar', price: 42000, income: 220, tag: 'Scuderia', desc: '1030 л.с. • Фиксированное антикрыло • F1 технологии' },
-      { id: 'cullinan_bb', name: 'Rolls-Royce Cullinan BB', type: 'luxury', price: 60000, income: 320, tag: 'Black Badge', desc: 'Звездное потолочное небо • Двери против хода • VIP' },
-      { id: 'pagani_utopia', name: 'Pagani Utopia V12', type: 'hypercar', price: 95000, income: 550, tag: 'Art Hypercar', desc: '6.0L V12 AMG Twin-Turbo • Механический шедевр' },
-      { id: 'bugatti_tourbillon', name: 'Bugatti Tourbillon', type: 'hypercar', price: 150000, income: 950, tag: 'V16 Legend', desc: '8.3L V16 Cosworth • 1800 л.с. • Часовой спидометр' }
+      { id: 'bmw_m5', name: 'Bimmer M5 CS', type: 'sedan', price: 1500, income: 5, tag: 'Sport Sedan', desc: '4.4L V8 Turbo • 635 л.с. • Карбоновый капот' },
+      { id: 'audi_rs7', name: 'Oudi RS7 Sport', type: 'sedan', price: 2400, income: 9, tag: 'Sportback', desc: '4.0L V8 Quattro • Керамические тормоза • 630 л.с.' },
+      { id: 'cadillac_ct5', name: 'Cadillac V-Power', type: 'sedan', price: 3200, income: 12, tag: 'Supercharged', desc: '6.2L Компрессор • 668 л.с. • Механика' },
+      { id: 'g63_brabus', name: 'Merc G-Wagen Brabo', type: 'suv', price: 4500, income: 18, tag: 'Luxury SUV', desc: 'Widestar 800 • Полный карбон • LED выхлоп' },
+      { id: 'urus_mansory', name: 'Lamborgiri Uragan', type: 'suv', price: 7500, income: 32, tag: 'Super SUV', desc: 'Widebody • 820 л.с. • Максималка 325 км/ч' },
+      { id: 'porsche_gt3rs', name: 'Porsha 911 RS-Track', type: 'track', price: 12000, income: 55, tag: 'Track Weapon', desc: '4.0L Атмо • 9000 об/мин • Активное крыло' },
+      { id: 'mclaren_765lt', name: 'McLauren 765 Long', type: 'track', price: 18000, income: 85, tag: 'Longtail', desc: 'Карбоновый монокок • 765 л.с. • Титановый выхлоп' },
+      { id: 'lambo_revuelto', name: 'Lamborgiri Revuel', type: 'supercar', price: 28000, income: 140, tag: 'V12 Hybrid', desc: '1015 л.с. • 0-100 за 2.5 сек • 3 электромотора' },
+      { id: 'ferrari_sf90', name: 'Ferari SF90 XX', type: 'supercar', price: 42000, income: 220, tag: 'Scuderia', desc: '1030 л.с. • Фиксированный спойлер • F1 технологии' },
+      { id: 'cullinan_bb', name: 'Royal-Royce Cullin', type: 'luxury', price: 60000, income: 320, tag: 'Black Edition', desc: 'Звездное небо • Двери против хода • VIP класс' },
+      { id: 'pagani_utopia', name: 'Pagani Utopia Art', type: 'hypercar', price: 95000, income: 550, tag: 'Art Hypercar', desc: '6.0L V12 Twin-Turbo • Механический шедевр' },
+      { id: 'bugatti_tourbillon', name: 'Bugatti Tourbillon V16', type: 'hypercar', price: 150000, income: 950, tag: 'V16 Legend', desc: '8.3L V16 • 1800 л.с. • Аналоговые часы' }
     ];
 
     const CRYPTO_CATALOG = [
-      { id: 'btc', name: 'Bitcoin', symbol: 'BTC', icon: '₿', basePrice: 65000 },
-      { id: 'eth', name: 'Ethereum', symbol: 'ETH', icon: 'Ξ', basePrice: 3200 },
-      { id: 'sol', name: 'Solana', symbol: 'SOL', icon: '◎', basePrice: 150 },
+      { id: 'btc', name: 'BitCoin', symbol: 'BTC', icon: '₿', basePrice: 65000 },
+      { id: 'eth', name: 'Etherium', symbol: 'ETH', icon: 'Ξ', basePrice: 3200 },
+      { id: 'sol', name: 'Solan', symbol: 'SOL', icon: '◎', basePrice: 150 },
       { 
         id: 'ton', 
-        name: 'Toncoin', 
+        name: 'TonCoin', 
         symbol: 'TON', 
         iconSvg: `<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7.5L5.5 19L12 22L18.5 19L21 7.5L12 2Z"/><path d="M12 2V22"/><path d="M3 7.5L12 12.5L21 7.5"/></svg>`, 
         basePrice: 6.5 
       },
       { 
         id: 'bnb', 
-        name: 'Binance Coin', 
+        name: 'Binanc Coin', 
         symbol: 'BNB', 
         iconSvg: `<svg viewBox="0 0 24 24" fill="#ffffff"><path d="M12 3.5L8.5 7L12 10.5L15.5 7L12 3.5ZM5.5 10L2 13.5L5.5 17L9 13.5L5.5 10ZM18.5 10L15 13.5L18.5 17L22 13.5L18.5 10ZM12 16.5L8.5 20L12 23.5L15.5 20L12 16.5ZM12 11.2L9.7 13.5L12 15.8L14.3 13.5L12 11.2Z"/></svg>`, 
         basePrice: 580 
       },
-      { id: 'doge', name: 'Dogecoin', symbol: 'DOGE', icon: 'Ð', basePrice: 0.12 }
+      { id: 'doge', name: 'DogeCoin', symbol: 'DOGE', icon: 'Ð', basePrice: 0.12 }
     ];
 
     let state = {
@@ -2557,7 +2541,6 @@
       saveGame();
     }
 
-    // МЕНЮ
     function toggleDrawer(open) {
       const overlay = document.getElementById('drawerOverlay');
       if (open) overlay.classList.add('open');
@@ -2592,7 +2575,6 @@
       document.querySelectorAll('.view-modal').forEach(m => m.classList.remove('active'));
     }
 
-    // КРИПТОРЫНОК
     function handleCryptoBack() {
       if (activeCryptoCoinId) {
         activeCryptoCoinId = null;
@@ -2772,7 +2754,6 @@
       saveGame();
     }
 
-    // ИНВЕНТАРЬ
     function renderInventoryView() {
       const cont = document.getElementById('inventoryContainer');
       cont.innerHTML = '';
@@ -2810,7 +2791,6 @@
       }
     }
 
-    // АВТОСАЛОН
     function renderDealershipView() {
       const cont = document.getElementById('dealershipContainer');
       cont.innerHTML = '';
@@ -2869,7 +2849,6 @@
       saveGame();
     }
 
-    // ГАРАЖ
     function renderGarageView() {
       const cont = document.getElementById('garageContainer');
       cont.innerHTML = '';
@@ -2932,7 +2911,6 @@
       }
     }
 
-    // АКТИВЫ
     function renderBusinessView() {
       const cont = document.getElementById('businessContainer');
       cont.innerHTML = '';
@@ -2972,18 +2950,15 @@
     }
 
     function updateUI() {
-      // Баланс шапки
       document.getElementById('playerBalance').innerText = Math.floor(state.balance).toLocaleString();
       document.getElementById('menuInvCount').innerText = state.inventory.length;
       document.getElementById('invCountBadge').innerText = state.inventory.length;
       document.getElementById('invCountTitle').innerText = state.inventory.length;
       document.getElementById('menuGarageCount').innerText = state.garage ? state.garage.length : 0;
 
-      // Плашки в профиле
       document.getElementById('quickInvBadge').innerText = `${state.inventory.length}/5`;
       document.getElementById('quickGarageBadge').innerText = `${state.garage ? state.garage.length : 0} авто`;
 
-      // Расчет суммарного капитала (Net Worth)
       const cashVal = Math.floor(state.balance);
       const cardsVal = state.inventory.reduce((a, b) => a + (b.marketPrice || 0), 0);
       const carsVal = (state.garage || []).reduce((acc, cId) => {
@@ -3005,7 +2980,6 @@
       document.getElementById('nwCarsVal').innerText = '$' + carsVal.toLocaleString();
       document.getElementById('nwCryptoVal').innerText = '$' + Math.floor(cryptoVal).toLocaleString();
 
-      // Динамический статус / ранг
       const rankTag = document.getElementById('profileRankTag');
       if (totalNetWorth >= 1000000) rankTag.innerText = 'OVERLORD 1M$';
       else if (totalNetWorth >= 250000) rankTag.innerText = 'BILLIONAIRE VIP';
@@ -3013,7 +2987,6 @@
       else if (totalNetWorth >= 10000) rankTag.innerText = 'CARD TYCOON';
       else rankTag.innerText = 'VIP CLUB';
 
-      // Доход
       const cardInc = state.inventory.reduce((a, b) => a + (b.income || 0), 0);
       const carInc = (state.garage || []).reduce((acc, cId) => {
         const c = CARS_CATALOG.find(x => x.id === cId);
@@ -3066,7 +3039,6 @@
       updateUI();
     }
 
-    // ТАЙМЕРЫ
     setInterval(() => {
       const cardInc = state.inventory.reduce((a, b) => a + (b.income || 0), 0);
       const carInc = (state.garage || []).reduce((acc, cId) => {
